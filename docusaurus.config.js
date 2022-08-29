@@ -26,7 +26,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  themes: ['@docusaurus/theme-live-codeblock'],
   presets: [
     [
       'classic',
@@ -34,6 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          //includeCurrentVersion: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -69,7 +70,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog', 
+            label: 'Blog', 
+            position: 'left'
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
