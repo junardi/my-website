@@ -1,17 +1,20 @@
-name: GitHub Actions Demo
+name: Environment Variables
 on: 
   push: 
     branches: [main]
 jobs:
   example-job-1:
-    runs-on: ${{ matrix.os }}
-    strategy: 
-      matrix:
-        python: [3.8, 3.10]
-        os: [ubuntu-latest, windows-latest]
-    steps:
-      - run: echo "${{ matrix.python }} / ${{ matrix.os }}"
+    env: 
+      DAY_OF_WEEK: Monday 
+    steps: 
+      - run: echo "Today is ${{ env.DAY_OF_WEEK }}"
+      - name: Build and Publish 
+        env: 
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.TWINE_API_KEY }}
+        run: echo "Publishing package $TWINE_USERNAME"
 
+   
 
 
 
