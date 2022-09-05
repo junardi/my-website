@@ -13,7 +13,7 @@ jobs:
         env: 
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.TWINE_API_KEY }}
-        run: echo "Publishing package $TWINE_USERNAME"
+        run: echo "Publishing package $TWINE_USERNAME and $TWINE_PASSWORD"
 
    
 
