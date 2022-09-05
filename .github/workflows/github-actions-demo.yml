@@ -8,10 +8,11 @@ jobs:
     steps:
       - run: echo "The job 1 was triggered"
   example-job-2:
+    needs: example-job-1
     runs-on: windows-latest
     steps:
       - run: echo "The job 2 in windows was triggered"
 
 
 
-      
+
