@@ -23,9 +23,9 @@ on:
     branches: [main]
   pull_request: 
     branches: [main]
-
-  example-job-1:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "The job 1 was triggered"
+  jobs:
+    example-job-1:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "The job 1 was triggered"
     
