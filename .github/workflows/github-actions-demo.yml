@@ -7,3 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job 1 was triggered"
+  example-job-2:
+    runs-on: windows-latest
+    steps:
+      - run: echo "The job 2 in windows was triggered"
+
+
+
+      
