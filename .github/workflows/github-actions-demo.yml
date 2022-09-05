@@ -1,11 +1,9 @@
 name: GitHub Actions Demo
 on: 
-  push: 
-    branches: [main]
-  pull_request: 
-    branches: [main]
+  schedule:
+    - cron: '3 * * * *'
 jobs:
   example-job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "The job 1 was triggered"
+      - run: echo "The scheduled date of the year"
