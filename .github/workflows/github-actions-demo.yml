@@ -1,19 +1,16 @@
-name: Environment Variables
+name: Actions with Input 
 on: 
   push: 
     branches: [main]
 jobs:
   example-job-1:
     runs-on: ubuntu-latest
-    env: 
-      DAY_OF_WEEK: Monday 
     steps: 
-      - run: echo "Today is ${{ env.DAY_OF_WEEK }}"
-      - name: Build and Publish 
-        env: 
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.TWINE_API_KEY }}
-        run: echo "Publishing package $TWINE_USERNAME and $TWINE_PASSWORD"
+      - uses: actions/checkout@v2
+        with: 
+          fetch-depth: 0
+      - run: echo "Used and action in the previous step!"
+     
 
    
 
