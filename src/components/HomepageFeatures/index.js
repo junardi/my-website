@@ -4,32 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'About',
+    Svg: require('@site/static/img/about.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Mark Boribor is an information technology professional who graduated from West Visayas State Univesity Janiuay Campus last 2012.
+        He is a competent; analytical; flexible; and eager to perform individual.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Location',
+    Svg: require('@site/static/img/location.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Mark Lives in Don T. Lutero West Janiuay, Iloilo City Philippines. He loves to work at home so that he can hang out with his friends and family frequently.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Skills',
+    Svg: require('@site/static/img/skills.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Javascript, Jquery, Ajax, Angular, React, HTML, CSS, Bootstrap, PHP, Codeigniter, OOP, MySQL, Firebase, Photoshop
       </>
     ),
   },
