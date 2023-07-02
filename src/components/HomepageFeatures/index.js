@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/skills.svg').default,
     description: (
       <>
-        Javascript, Jquery, Ajax, Angular, React, HTML, CSS, Bootstrap, PHP, Codeigniter, OOP, MySQL, Firebase, Photoshop
+        Javascript, Jquery, Ajax, Angular, React, Preact, Next js, HTML, CSS, Sass, Bootstrap, PHP, Codeigniter, OOP, MySQL, Firebase, Photoshop
       </>
     ),
   },
